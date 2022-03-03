@@ -109,18 +109,18 @@ function App() {
   );
 }
 
-const validationSchema = yup.object().shape({
-  name: yup.string().required("El Nombre es requerido"),
-  surname: yup.string().required("El Apellido es requerido"),
-  phone: yup.string().required("El Telefono es requerido"),
-  dpi: yup
-    .string()
-    .required("El DPI es requerido")
-    .matches(/^[0-9]{4}\s?[0-9]{5}\s?[0-9]{4}$/, "El DPI no es válido"), //Con la siguiente función lambda validamos que el DPI exista
-  email: yup
-    .string()
-    .email("Formato de Email inválido")
-    .required("El email es requerido"),
-});
+// const validationSchema = yup.object().shape({
+//   name: yup.string().required("El Nombre es requerido"),
+//   surname: yup.string().required("El Apellido es requerido"),
+//   phone: yup.string().required("El Telefono es requerido"),
+//   dpi: yup
+//     .string()
+//     .required("El DPI es requerido")
+//     .matches(/^[0-9]{4}\s?[0-9]{5}\s?[0-9]{4}$/, "El DPI no es válido"), //Con la siguiente función lambda validamos que el DPI exista
+//   email: yup
+//     .string()
+//     .email("Formato de Email inválido")
+//     .required("El email es requerido"),
+// });
 
 export default App;
